@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./assets/css/loopple/loopple.css">
 </head>
 
+<!--component 1-->
+
 <body class="bg-gray-100">
     <div class="mx-auto bg-white">      
     
@@ -126,7 +128,9 @@
   <!--Hero-->
 <section class="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
 
-  <div class="flex flex-col justify-center col-span-1 text-center lg:text-start">
+  <div class="flex flex-col justify-center col-span-1 text-center lg:text-start">        <!--I used a flex container (flex) with both vertical
+                                                                                          and horizontal alignment( justify- center) to
+                                                                                           centre the content within the hero section.-->
 
              <h1 class="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl text-dark-grey-900"> The Clever Place to Keep Your Cache</h1>
 
@@ -137,7 +141,7 @@
 
   <div class="flex flex-col items-center gap-4 lg:flex-row">            
 
-<!--The call to action (CTA) in the hero section is a critical element to engage users and guide them towards taking a specific action, such as Join Cache now or Join Discord server buttons about a product or service.
+<!--The call to action (CTA) in the hero section is a critical element to engage users and guide them towards taking a specific action, such as Join Cache now or Join Discord server buttons about a product or server.
 -->
 
               <button class="flex items-center py-4 text-sm font-bold text-white px-7 focus:ring-4 focus:ring-purple-blue-100 transition duration-300 rounded-xl bg-green-500 hover:bg-pink-500">
@@ -163,7 +167,7 @@
 -->
 <section class="w-full ">
 
- <div class="container flex flex-col items-center gap-8 mx-auto my-40 ">
+ <div class="container flex flex-col items-center gap-8 mx-auto my-40 ">     
        
            <p class="text-center text-grey-600 font-semibold mb-10 text-2xl ">
             Endorsed by global companies like
@@ -429,7 +433,7 @@ The JavaScript code checks whether each statistic is in the viewport during scro
 
 <div class="flex flex-col items-center">
       <h3 class="text-5xl font-extrabold leading-tight text-center text-dark-grey-900">
-      <span id="countto3" countto="2600" data-decimal="1">2.8</span>K+                   
+      <span id="countto3" countto="2600" data-decimal="1">2.8</span>K+    <!--data-decimal is a custom attribute, and a developer you are free to create your own data attribute , prefixing it with data... these attributes are usually used for storing data that is relavant to java-->            
       </h3>
       <p class="text-base font-medium leading-7 text-center text-dark-grey-600">
          Global Partners
@@ -457,7 +461,7 @@ The JavaScript code checks whether each statistic is in the viewport during scro
 <div class="w-full">
    <div class="container flex flex-col items-center gap-16 mx-auto my-32">     
       <div class="grid w-full grid-cols-1 gap-32 lg:grid-cols-2">
-         <div class="bg-contain bg-no-repeat bg-center hidden lg:block rounded-3xl" style="background-image: url(assets/component-4/getting-started.png) ;">
+         <div class="bg-contain bg-no-repeat bg-center hidden lg:block rounded-3xl" style="background-image: url(assets/component-4/getting-started.png) ;">  <!--when bg-size is set to contain, it means that the background image should be scaled to maintain its aspect ratio.  while fitting into the containers dimension -->
          </div>
          <div class="flex flex-col gap-16">
 
@@ -585,6 +589,15 @@ Semantic Html:  Use of semantic HTML5 elements like <footer> <nav> <ul> for prop
 
 <!--Footer Section-->
 
+
+<!-- Flexbox and CSS grid can be effective for
+designing a responsive footer with links, privacy
+policy, terms of use , and social media icons . Each
+layout method has its strengths, and the choice
+between flexbox and css grids depends on the
+specific design requirements-->
+
+
 <div class="w-full bg-green-500">
      <div class="container flex flex-col mx-auto">
       <div class="flex flex-col items-center w-full my-20">
@@ -593,6 +606,9 @@ Semantic Html:  Use of semantic HTML5 elements like <footer> <nav> <ul> for prop
 
             <!--Socials-->
 
+
+<!--
+In JavaScript, javascript:void(0) is often used as a placeholder or "do-nothing" action for the href attribute in HTML anchor (<a>) tags.-->            
             <div class="flex items-center gap-8">
 
               <a href="javascript:void(0)" class="text-grey-700  hover:text-grey-900">    <!--Javascript:void(0) returns no value / Undefined-->
@@ -615,7 +631,7 @@ Semantic Html:  Use of semantic HTML5 elements like <footer> <nav> <ul> for prop
                 </svg>
                 </a>
 
-                <a href="javascript:void(0)" class="text-grey-700  hover:text-grey-900">
+                <a href="javascript:void(0)" class="text-grey-700  hover:text-grey-900">                         
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none">
                     <path d="M12 3C7.0275 3 3 7.13211 3 12.2284C3 16.3065 5.5785 19.7648 9.15375 20.9841C9.60375 21.0709 9.76875 20.7853 9.76875 20.5403C9.76875 20.3212 9.76125 19.7405 9.7575 18.9712C7.254 19.5277 6.726 17.7332 6.726 17.7332C6.3165 16.6681 5.72475 16.3832 5.72475 16.3832C4.9095 15.8111 5.78775 15.8229 5.78775 15.8229C6.6915 15.887 7.16625 16.7737 7.16625 16.7737C7.96875 18.1847 9.273 17.777 9.7875 17.5414C9.8685 16.9443 10.1003 16.5381 10.3575 16.3073C8.35875 16.0764 6.258 15.2829 6.258 11.7471C6.258 10.7399 6.60675 9.91659 7.18425 9.27095C7.083 9.03774 6.77925 8.0994 7.263 6.82846C7.263 6.82846 8.01675 6.58116 9.738 7.77462C10.458 7.56958 11.223 7.46785 11.988 7.46315C12.753 7.46785 13.518 7.56958 14.238 7.77462C15.948 6.58116 16.7017 6.82846 16.7017 6.82846C17.1855 8.0994 16.8818 9.03774 16.7917 9.27095C17.3655 9.91659 17.7142 10.7399 17.7142 11.7471C17.7142 15.2923 15.6105 16.0725 13.608 16.2995C13.923 16.5765 14.2155 17.1423 14.2155 18.0071C14.2155 19.242 14.2043 20.2344 14.2043 20.5341C14.2043 20.7759 14.3617 21.0647 14.823 20.9723C18.4237 19.7609 21 16.3002 21 12.2284C21 7.13211 16.9703 3 12 3Z" fill="currentColor"/>
                   </svg>                  
